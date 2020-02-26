@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Jojo´s</title>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="css/estilos.css">
+      <link rel="icon" type="image/png" href="imagenes/giorno.png" />
+  </head>
+  <body>
+    <!-- Barra de navegación -->
+    <div class="container">
+      <nav class="container navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <a class="navbar-brand" href="index.html">Jojo's</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="login.html">Iniciar sesión</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="jojotes.html">Personajes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="fondos.html">Fondos</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+</nav>
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="contenido-jojos" style="width: 100%">
+          <h1 class="display-4">¿Que es jojo's?</h1>
+          <p>JoJo’s Bizarre Adventure es el nombre de un manga escrito por Hirohiko Araki que nació en 1987 tiene, acción, algo de drama, suspenso, comedia, referencias musicales, históricas, arqueológicas y ahi le paro (al menos en el primer y segundo arco que son ”Phantom Blood” y ”Battle Tendency”).
+Este anime lleva en si 5 temporadas animadas y una que esta en emisión, aunque ya se había animado el tercer arco (Stardust Crusaders, OVAs iniciadas en 1993 y finalizadas en 2002)  y una película que adapto el primer arco que dicen que fue tan mal adaptado que nunca salio de Japon (Phantom Blood, 2007) pero volviendo al tema, David Production decidió animar el manga en 2012 como Dios manda lo cual le fue bien a la casa animadora y lo cual significa que tenemos JoJo para rato ya que son 8 arcos y apenas están animando el 6°</p>
+        </div>
+      </div>
+      <div class="col-md-12">
+        <div class="tabla container" style="width: 100%">
+          <h2 class="display-4">Tabla de informacion</h2>
+          <table class="mt-3">
+  <tr>
+    <th> </th>
+    <th>Phantom Blood </th>
+    <th> Battle Tendency </th>
+    <th> Stardust Crusaders </th>
+    <th> Diamond is Unbreakable </th>
+    <th> Vento Aureo </th>
+    <th> Stone Ocean </th>
+    <th> Steel Ball Run </th>
+    <th> JoJolion </th>
+  </tr>
+  <tr>
+    <td>*año de lanzamiento*</td>
+    <td>1987</td>
+    <td>1987-1989</td>
+    <td>1989-1992</td>
+    <td>1992-1995</td>
+    <td>1995-1999</td>
+    <td>2000-2003</td>
+    <td>2004-2011</td>
+    <td>2011-en curso</td>
+  </tr>
+  <tr>
+    <td>*Protagonista*</td>
+    <td>Jonathan Joestar</td>
+    <td>Joseph Joestar</td>
+    <td>Jotaro Kujo</td>
+    <td>Josuke Higashikata</td>
+    <td>Giorno Giovanna</td>
+    <td>Joline Kujo</td>
+    <td>Jhonny Joestar</td>
+    <td>Josuke Higashikata</td>
+  </tr>
+
+</table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+  <div class="row">
+      <div class="col-md-6">
+        <div class="listas mt-5">
+            <h2 class="display-4 ml-4" >Stands</h2>
+          <ul class="ml-0" style=" list-style: none">
+            <li>
+            Crazy Diamond
+            </li>
+              <li>
+              Gold Experience Requiem
+              </li>
+              <li>
+              Stickey Fingers
+              </li>
+              <li>
+              Sex Bullets
+              </li>
+              <li>
+              The Hand
+              </li>
+              <li>
+              Star Platinum
+              </li>
+
+          </ul>
+          </div>
+      </div>
+      <div class="col-md-6 ">
+        <div class="info-stands mt-5">
+          <h2 class="display-4">¿Que son los stands?</h2>
+            <p class="mt-3">Los Stands defienden y potencian a sus usuarios en una gran variedad de maneras, cuando son revelados pueden estar representados de una gran variedad de formas que van desde figuras flotando cerca de ellos hasta una habilidad o un traje. Sin embargo, generalmente, los Stands no pueden ser vistos por personas que no posean uno.</p>
+        </div>
+      </div>
+      </div>
+  </div>
+  <!-- animaciones -->
+  <script>
+  window.sr = ScrollReveal();
+    sr.reveal('.navbar',{
+      duration: 2000,
+      origin: 'bottom'
+    });
+    sr.reveal('.contenido-jojos',{
+      duration: 2000,
+      origin: 'left',
+      distance: '300px'
+    });
+    sr.reveal('.tabla',{
+      duration: 2000,
+      origin: 'bottom',
+      distance: '300px'
+    });
+    sr.reveal('.info-stands',{
+      duration: 2000,
+      origin: 'right',
+      distance: '300px'
+    });
+    sr.reveal('.listas',{
+      duration: 2000,
+      origin: 'left',
+      distance: '300px'
+    });
+  </script>
+
+  </body>
+</html>
