@@ -1,0 +1,78 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+   <title>Inicio</title>
+    <!-- Bootstrap4 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Bootstrap4 Scripts -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+      <link rel="icon" type="image/png" href="{% static 'imagenes/giorno.png' %}" >
+  </head>
+  <body>
+    <div class="container">
+      <!-- Navbar -->
+      <nav class=" navbar navbar-expand-lg navbar-light bg-info fixed-top">
+    <a class="navbar-brand" href="{% url 'index' %}">BookMetter</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link"  href="{% url 'logout' %}">Cerrar sesión</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"  href="{% url 'libros' %} ">Libros</a>
+        </li>
+      </ul>
+    </div>
+    </nav>
+    <!-- Contenido -->
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-6 mt-3" >
+          <h2 class="">Isbn: {{libro.isbn}}</h2>
+          <br>
+          <h2 class="">Titulo: {{libro.title}}</h2>
+          <br>
+          <h2 class="">Autor:  {{libro.author}}</h2>
+          <br>
+          <h2 class="">Año de Lanzamiento: {{libro.year}}</h2>
+          <br>
+          <form class="" action="" method="post">{% csrf_token %}
+            <h2 >Crear reseña</h2>
+            <textarea name="inf" rows="5" cols="50" required></textarea>
+            <br>
+            <select class="" name="inf2" required>
+              <option value="">Calificación</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+            <br>
+            <input type="submit" name="" value="Calificar">
+          </form>
+
+        </div>
+        <div class="col-md-6 mt-3">
+          <h2 class="display-4">Reseñas:</h2>
+          {% for res in resenas%}
+          <p class="" style="font-size: 17px;">
+            <b>{{res.usuario}}</b> Lo calificó con
+            {{res.calificacion}}:
+            <br>
+            {{res.resena}}
+          </p>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    </div>
+  </body>
+</html>
