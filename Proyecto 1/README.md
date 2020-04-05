@@ -1,5 +1,8 @@
-**********Informacion e intrucciones*****************************************************************************************************
+**********Edit***************************************************************************************************************************
+Le comento que agregue la leccion 7 aunque valga menos calificacion y la leccion 5 habiamos quedado que la checaria profe, por qie esa la habia mandado al classrom(alla esta la fecha de entrega).
+Gracias!!!.
 
+**********Informacion e intrucciones*****************************************************************************************************
 El proyecto fue creado en Django, cuenta con todos los requerimentos pedidos (Sesiones,Psycopg2,Elephantsql y SQLalchemy).
 Apenas abriendo la carpeta "Proyecto 1" habrá 2 archivos y la carpeta tiene el mismo nombre "proyecto1",el archivo para ejecutar 
 la aplicacion web es un acceso directo, Abrimos la consola de windows (cmd), en ella nuestra carpeta "Proyecto1" y  
