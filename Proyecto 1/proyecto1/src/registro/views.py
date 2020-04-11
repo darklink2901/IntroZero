@@ -42,6 +42,7 @@ def registro(request):
             if form.is_valid():
                 user = form.save()
                 if user is not None:
+                    request.session['usr'] = user.username
                     do_login(request, user)
                     return redirect('index')
 
